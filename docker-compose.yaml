@@ -11,7 +11,7 @@ services:
     ports:
       - "11434:11434"
     volumes:
-      - ./ollama:/root/.ollama
+      - ollama:/root/.ollama
     environment:
       # - OLLAMA_HOST='0.0.0.0'  # uncomment to make ollama reachable by other computers on your network
       - OLLAMA_KEEP_ALIVE=25m
